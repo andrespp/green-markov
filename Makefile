@@ -4,7 +4,7 @@ all:
 	#make clean
 
 docker:
-	docker container run --rm -v `pwd`:/latex latex pdflatex main.tex
+	docker container run --rm -v `pwd`:/latex andrespp/latex pdflatex main.tex
 
 clean:
 	rm -f *~ *.aux *.sty *.out *.backup *.tcp *.tps *.sty *.toc *.log *.lot *.bbl\
