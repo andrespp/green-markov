@@ -88,11 +88,46 @@
   \end{figure}  
 \end{frame}
 
+\begin{frame}{\small Como todos os eventos são representados por um processo de Poisson}
+    \begin{itemize} 
+      \item \footnotesize Cálculo da taxa de saída total \alert{$s _{f}$}, quando a ação \alert{$a$} é selecionada:
+    \end{itemize} 
+     
+    \begin{figure} 
+      \includegraphics[scale=0.37]{./Figures/form1} 
+      \scriptsize , onde $\Lambda _{sf st}$ é a taxa de transição do estado $s_{f}$ para o estado $s_{t}$.
+    \end{figure}  
+    
+    \begin{itemize}
+      \item \footnotesize Cálculo da probabilidade de transição:
+    \end{itemize}
+    
+    \begin{figure} 
+      \includegraphics[scale=0.37]{./Figures/form2} 
+    \end{figure}
+    
+    \begin{itemize}
+      \item \footnotesize Cálculo do tempo esperado até a próxima decisão:
+    \end{itemize}
+    
+    \begin{figure} 
+      \includegraphics[scale=0.37]{./Figures/form3} 
+    \end{figure}
+\end{frame}
+
 \begin{frame}
-  Cálculo da taxa de saída de cada estado \alert{$s _{f}$}, quando a ação \alert{$s _{f}$} selecionada:
-  \begin{center}
-      \item $$\Lambda_{sf}(a) =\sum_{\underset{st \epsilon S}{st \neq sf}} $$
-  \end{center}
+  \footnotesize Os custos utilizados pelo sistema quando este está no estado de \alert{$s_{f}$} e uma acção \alert{$a$} é escolhido, pode ser calculado por:
+  \begin{figure}
+    \includegraphics[scale=0.37]{./Figures/form4}
+  \end{figure}
+  \scriptsize Onde:
+  \begin{itemize}
+    \item \alert{$energyCons$} é o consumo de energia, podendo ser \alert{$energyCons_{m}$} ou \alert{$energyCons_{f}$}
+    \item \alert{$energyCost$} é o custo energétio, podendo ser \alert{$energyCost_{m}$} ou \alert{$energyCost_{f}$}
+    \item \alert{$loss$} é a probabilidade de perda de pacote, podendo ser \alert{$loss_{m}$} ou \alert {$loss_{f}$}
+    \item \alert{$lossCost$} é o custo de energia, podendo ser \alert{$lossCost_{m}$} ou \alert{$lossCost_{m}$}
+    \item \alert{$throuhputCost$} é o custo para transmitir com uma taxa de transferência reduzida
+  \end{itemize}
 \end{frame}
 % \begin{frame}
 %  \begin{block}{} 
